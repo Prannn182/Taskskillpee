@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors_in_immutables
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,13 +16,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Skillspe Assignment'),
+      home:  MyHomePage(title: 'Skillspe Assignment'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+   MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -37,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: EdgeInsets.all(16.0),
           child: Column(
             children: [
               Row(
@@ -45,11 +47,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: const Icon(Icons.arrow_back_ios),
+                    icon:  Icon(Icons.arrow_back_ios),
                   ),
                   const Text('My Activity'),
                   Row(
-                    children: const [
+                    children:  [
                       Icon(Icons.share),
                       SizedBox(width: 16.0),
                       Icon(Icons.more_vert),
@@ -57,18 +59,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              const SizedBox(height: 16.0),
+               SizedBox(height: 16.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: const EdgeInsets.all(46.0),
+                    padding:  EdgeInsets.all(46.0),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF9463FF),
+                      color:  Color(0xFF9463FF),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     child: Column(
-                      children: const [
+                      children:  [
                         Icon(Icons.arrow_downward, color: Colors.white),
                         SizedBox(height: 12.0),
                         Text(
@@ -99,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.all(46.0),
+                    padding:  EdgeInsets.all(46.0),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(8.0),
@@ -108,12 +110,12 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: Colors.grey.withOpacity(0.2),
                           spreadRadius: 2,
                           blurRadius: 5,
-                          offset: const Offset(0, 3),
+                          offset: Offset(0, 3),
                         ),
                       ],
                     ),
                     child: Column(
-                      children: const [
+                      children: [
                         Icon(Icons.money_off, color: Color(0xFF9463FF)),
                         SizedBox(height: 8.0),
                         Text(
@@ -145,26 +147,26 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              const SizedBox(height: 16.0),
-              const Text(
+               SizedBox(height: 16.0),
+              Text(
                 'Quick Tip: Lorem ipsum dolor sit amet consectetur. Lorem graa volutpat dui sollicitudin sociis feugiat diam to dui sollicitudin.',
                 style: TextStyle(
                   fontSize: 12.0,
                 ),
               ),
-              const SizedBox(height: 16.0),
+              SizedBox(height: 16.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFF9463FF),
+                      primary: Color(0xFF9463FF),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                     ),
-                    child: const Text('Live Events'),
+                    child: Text('Live Events'),
                   ),
                   ElevatedButton(
                     onPressed: () {},
@@ -173,15 +175,15 @@ class _MyHomePageState extends State<MyHomePage> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0),
                       ),
-                      side: const BorderSide(color: Color(0xFF9463FF)),
+                      side:  BorderSide(color: Color(0xFF9463FF)),
                     ),
-                    child: const Text('Closed Events'),
+                    child:  Text('Closed Events'),
                   ),
                 ],
               ),
-              const SizedBox(height: 16.0),
+              SizedBox(height: 16.0),
               Container(
-                padding: const EdgeInsets.all(16.0),
+                padding:  EdgeInsets.all(16.0),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8.0),
@@ -190,25 +192,25 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.grey.withOpacity(0.2),
                       spreadRadius: 2,
                       blurRadius: 5,
-                      offset: const Offset(0, 3),
+                      offset:  Offset(0, 3),
                     ),
                   ],
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       'Challenge Name',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(height: 16.0),
+                     SizedBox(height: 16.0),
                     ChallengeCard(
                       name: 'Lorem ipsum dolor amet, consectetur...',
                       average: '₹2.78',
                       returns: '+ ₹200',
-                      icon: const Icon(Icons.sentiment_satisfied),
+                      icon:  Icon(Icons.sentiment_satisfied),
                     ),
                     ChallengeCard(
                       name: 'Lorem ipsum dolor amet, consectetur...',
