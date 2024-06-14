@@ -1,16 +1,7 @@
 # taskskillpe
 
-A new Flutter project.
+A task given by Skillpe .
 
-## Getting Started
+# Output
+![Screenshot (89)](https://github.com/Prannn182/Taskskillpee/assets/89305305/e5276868-bf0a-43dd-8fc1-f737fe1b9685)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
