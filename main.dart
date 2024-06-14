@@ -1,9 +1,9 @@
-// ignore_for_file: prefer_const_constructors_in_immutables
+// ignore_for_file: prefer_const_constructors_in_immutables, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     onPressed: () {},
                     icon:  Icon(Icons.arrow_back_ios),
                   ),
-                  const Text('My Activity'),
+                  Text('My Activity'),
                   Row(
                     children:  [
                       Icon(Icons.share),
@@ -161,7 +161,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      primary: Color(0xFF9463FF),
+                      backgroundColor: Color(0xFF9463FF),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -171,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.white,
+                      backgroundColor: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0),
                       ),
@@ -258,14 +258,14 @@ class ChallengeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(8.0),
+      padding:  EdgeInsets.all(8.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
             children: [
               icon,
-              const SizedBox(width: 18.0),
+              SizedBox(width: 18.0),
               Text(name),
             ],
           ),
